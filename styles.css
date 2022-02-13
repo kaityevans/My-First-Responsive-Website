@@ -1,3 +1,112 @@
-* {
+body {
     display: grid;
+    grid-template-rows: 50% 50%;
+    /* grid-template-columns: auto auto auto; */
 }
+
+.topContainer {
+    display: grid;
+    grid-auto-flow: row 50% 50%;
+    border-left: 1px solid #000;
+    border: 5px solid black;
+    padding: 50px;
+    height: 200px;
+    background-color: lightslategrey;
+    /* grid-row-start: 50% 50%;
+    grid-row-end: auto; */
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 15px groove lightskyblue;
+    /* font-weight: 1000px; */
+}
+
+.bottomContainer {
+    display: grid;
+    grid-column-start: auto auto auto;
+    grid-template-columns: auto auto auto;
+    display: flex;
+    grid-row-end: auto auto auto;
+    /* grid-row-start: auto;*/
+     grid-template-rows: auto auto auto; 
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+.box3, .box2, .box1 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    /* justify-content: space-between; */
+    padding: 20px;
+}
+
+.box1 {
+    background-color: lightgreen;
+    color: darkblue;
+}
+
+.box2 {
+    background-color: lavender;
+    color: green;
+}
+
+.box3 {
+    background-color: lightblue;
+    color: blueviolet;
+}
+.box1 h1 {
+    border: 2px solid green;
+    background-color: green;
+    color: green;
+}
+
+.box2 h1 {
+    border: 2px solid purple;
+    background-color: purple;
+    color: purple;
+}
+.box3 h1 {
+    border: 2px solid blue;
+    background-color: blue;
+    color: blue;
+}
+
+/* Small and up (Landscape Phones) */
+@media (max-width: 576px) {
+    .bottomContainer {
+        display: grid;
+        grid-template-columns: auto;}
+    .topContainer h1 {
+        font-size: 100% bold;    
+    }
+}
+
+  /* Medium and up (Tablets)
+  @media (min-width: 768px) {
+    .topContainer h1 {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Large and up (Desktops) */
+/* @media (min-width: 992px) {
+    .topContainer h1 {
+        font-size: 100px;
+    } */
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+/* @media (min-width: 1200px) {
+    .topContainer h1 {
+        font-size: 100px;
+    }
+} */ 
+    
