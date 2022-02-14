@@ -84,6 +84,7 @@ h1 {
         display: grid;
         grid-template-columns: auto;}
     .topContainer h1 {
+        text-align: center;
         font-size: 100% bold;    
     }
 }
